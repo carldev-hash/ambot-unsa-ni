@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CC 106 Web App" />
+    <meta name="author" content="Cj Abarca" />
+    <title>CC 106 Web App</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: #303030;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 32px;
+        padding-block: 24px;
+      }
+
+      ul {
+        display: flex;
+        gap: 32px;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .hero-section {
+        background-image: url("./assets/hero-section.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .hero-section {
+        padding-inline: 32px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 120px;
+      }
+
+      .hero-content {
+        width: 50%;
+      }
+
+      h1 {
+        font-size: 80px;
+        color: #fff;
+        line-height: 1;
+      }
+      .hero-content p {
+        color: #fff;
+        line-height: 1.5em;
+      }
+
+      button {
+        padding: 12px 52px;
+        border: none;
+        background-color: #e39b3c;
+        color: #fff;
+        margin-top: 24px;
+      }
+
+      .dancetour {
+        background: #e39b3c;
+        display: flex;
+        align-items: center;
+        padding: 120px 32px;
+      }
+
+      .dance-text_intro {
+        text-align: center;
+        margin-bottom: 52px;
+        color: #fff;
+      }
+
+      .dance-text_intro h2 {
+        font-size: 72px;
+      }
+
+      .dance-card {
+        display: flex;
+        gap: 32px;
+      }
+
+      .card {
+        background: #303030;
+      }
+      .card img {
+        width: 100%;
+      }
+
+      .card-text {
+        padding: 32px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .card-text h2 {
+        font-size: 32px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="icons/logo.png" alt="Logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Promo</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <img src="icons/search.svg" alt="Search" />
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Title Here</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              maxime error, est iste doloribus fugit id distinctio ducimus ut ea
+              explicabo optio nemo eos accusamus labore eligendi omnis fuga
+              sapiente!
+            </p>
+            <button>Register Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="dancetour">
+        <div class="container">
+          <div class="dance-text_intro">
+            <h2>Dance Tour</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              inventore sunt enim?
+            </p>
+          </div>
+
+          <div class="dance-card">
+            <div class="card">
+              <img src="assets/card1.jpg" alt="Card 1" />
+              <div class="card-text">
+                <h2>America</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis, ex?
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/card2.jpg" alt="Card 2" />
+              <div class="card-text">
+                <h2>Asia</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis, ex?
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/card3.jpg" alt="Card 1" />
+              <div class="card-text">
+                <h2>Australlia</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis, ex?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
